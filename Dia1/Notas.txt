@@ -1,0 +1,14 @@
+One Day
+
+1 Dia - Aprendi criar um projeto em python pelo Pycharm.
+  Validar versão com o python -V 3.9.2
+1.1 Instalar o Django
+   > pip install django - 
+1.2 Iniciar projeto na linha de comando no repositorio atual. 
+   > django-admin startproject quiz .   
+1.3 Rodar o servidor no django
+   > python manage.py runserver
+1.4 Add configuração para rodar o servidor na aplicação.
+    script path
+    parameters : runserver
+
