@@ -1,6 +1,7 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
 
 def home(requisicao):
-    return render(requisicao,'base/home.html')
+    return HttpResponse('Olá Mundo, em Python Django - ROTA (req,rep)! ok =D ')

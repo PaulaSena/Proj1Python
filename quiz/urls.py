@@ -20,5 +20,5 @@ from quiz.base import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('admin/', views.home),
+    path('', views.home),
 ]
