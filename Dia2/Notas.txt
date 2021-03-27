@@ -1,0 +1,24 @@
+One Day
+
+2 Dia - Passos criar arquivo statico
+ > python ..\manage.py startapp base
+2.1 Criar pasta static de FrontEnd dentro da pasta base.
+ > http://127.0.0.1:8000/static/base/index.html
+2.2 Definir direção do app:
+ >Localizar arquivo Sttings.py em INSTALLED_APPS =[
+ > 'quiz.base',
+2.3 Rodar novamente a aplicação.
+2.4 Realizar o mapeamento do path
+ notas:Resquest Response 
+2.5 Templetizar
+ > Editar arquivo views.py dentro da pasta base criada.
+2.6 views.py
+ > Função 
+   >def home(requisicao):
+    pass
+2.7 urls.py 
+     path('admin/', admin.site.urls),
+     path(' ', vi),  *ctrl space space. 
+
+
+parei por aqui..
