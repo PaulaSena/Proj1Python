@@ -1,7 +1,11 @@
-from django.http import HttpResponse
+
 from django.shortcuts import render
 
 # Create your views here.
 
 def home(requisicao):
-    return HttpResponse('Olá Mundo, em Python Django - ROTA (req,rep)! ok =D ')
+    return render(requisicao,'base/home.html')
+
+def perguntas(requisicao, indice):
+    contexto ={'indice_da_questao': indice}
+    return render(requisicao,'base/game.html',context=contexto)
