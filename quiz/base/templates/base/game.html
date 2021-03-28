@@ -12,32 +12,22 @@
             <p class="subtitle-quiz">Quiz Ana </p>
             <p class="subtitle-page">Dev Pro Perguntas</p>
 
-        <div class="container">
+            <div class="container">
 
                 <div id="loader"></div>
 
                 <div id="game" class="justify-center flex-column animate-bottom hidden">
 
                     <h2>Questão {{indice_da_questao}}</h2>
-                    <h3>Qual destas palavras é uma palavra reservada em Python?</h3>
-
-                    <div class="choice-container">
-                        <p class="choice-prefix">A</p>
-                        <p class="choice-text">copy</p>
-                    </div>
-                    <div class="choice-container">
-                        <p class="choice-prefix">B</p>
-                        <p class="choice-text incorrect">names</p>
-                    </div>
-                    <div class="choice-container">
-                        <p class="choice-prefix">C</p>
-                        <p class="choice-text correct">if</p>
-                    </div>
-                    <div class="choice-container">
-                        <p class="choice-prefix">D</p>
-                        <p class="choice-text">value</p>
-                    </div>  
-
+                    <h3>{{pergunta.enunciado}}</h3>
+                <!-- Aqui foi feito o laço de repetição substituindo as 3 divs-->
+                    {% for alternativa in pergunta.alternativas.array %}
+                        <div class="choice-container">
+                            <p class="choice-prefix">A</p>
+                            <p class="choice-text">{{alternativa}}</p>
+                        </div>
+                    {% endfor %}
+                <!-- Aqui foi feito o laço de repetição-->
                 </div>
             
             </div>
